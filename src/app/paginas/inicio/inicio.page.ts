@@ -38,6 +38,22 @@ export class InicioPage implements OnInit {
       nombre:'Botones',
       direccion:'/buttons'
     },
+    {
+      icono:'accessibility',
+      nombre:'Avatar',
+      direccion:'/avatar'
+    },
+    {
+      icono:'attach',
+      nombre:'Cards',
+      direccion:'/cards'
+    },
+    {
+      icono:'documents',
+      nombre:'Slides',
+      direccion:'/slides'
+    },
+
   ]  
  
   constructor() { }
