@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Console } from 'console';
-import { ConsoleReporter } from 'jasmine';
+
 
 @Component({
   selector: 'app-list-reorder',

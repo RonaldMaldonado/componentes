@@ -3,7 +3,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-list >
+  <ion-list #someInput>
     <ion-item-sliding *ngFor=" let usuario of usuarios | async">
       <ion-item-options side="start">
         <ion-item-option (click)="favorito(usuario)">

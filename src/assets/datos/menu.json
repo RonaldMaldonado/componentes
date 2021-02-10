@@ -78,6 +78,26 @@
       "icono":"trash",
       "nombre":"Listas Reordenadas",
       "direccion":"/list-reorder"
-    }
+    },
+    {
+      "icono":"person",
+      "nombre":"Modal",
+      "direccion":"/modal"
+    },  
+    {
+      "icono":"baseball-outline",
+      "nombre":"Pover",
+      "direccion":"/pover"
+    },
+    {
+      "icono":"search-outline",
+      "nombre":"SearchBar",
+      "direccion":"/search"
+    },        
+    {
+      "icono":"search-outline",
+      "nombre":"Tabs",
+      "direccion":"/tabs"
+    }        
   ]  
  

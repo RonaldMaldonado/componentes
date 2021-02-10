@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { IonList } from '@ionic/angular';
 import { Observable, Subscriber } from 'rxjs';
 import { DataService } from 'src/app/service/data.service';
@@ -10,7 +10,7 @@ import { DataService } from 'src/app/service/data.service';
 })
 export class ListasPage implements OnInit {
   usuarios : Observable<any>
-  @ViewChild (IonList) ionlist:IonList;
+  @ViewChild ('someInput',{read: ElementRef, static:false}) ionlist:IonList;
 
   constructor( private dataservice: DataService) { }
 
@@ -21,6 +21,8 @@ export class ListasPage implements OnInit {
   favorito(usuario){
     console.log(usuario);
     this.ionlist.closeSlidingItems();
+    
+
   }
 
   compartir(usuario){

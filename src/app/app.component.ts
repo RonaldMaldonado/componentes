@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Platform } from '@ionic/angular';
+import { MenuController, Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { DataService } from './service/data.service';
@@ -18,7 +18,8 @@ export class AppComponent {
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    private DataService:DataService
+    private DataService:DataService,
+    private menuController: MenuController
   ) {
     this.initializeApp();
   }
@@ -29,5 +30,9 @@ export class AppComponent {
       this.splashScreen.hide();
       this.componentes= this.DataService.getMenu()
     });
+  }
+
+  toggleMenu(){
+    this.menuController.toggle();
   }
 }
